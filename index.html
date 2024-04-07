@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+        <title>Wordle - Polly Orlowska</title>
+        
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+
+    <body>
+        <div id="landing" class="bg-grey-100 dark:bg-gray-900">
+            <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 flex flex-col items-center">
+                
+                <!-- logo box -->
+                <div class="logo h-21 w-auto mx-auto ">
+                    <img src="assets/img/logo.png" alt="logo" class="h-full" >
+                </div>
+                
+                <h1 class="mb-2 text-5xl font-extrabold tracking-tight leading-none text-gray-900 lg:text-6xl dark:text-white">Wordle</h1>
+                <p  class="mb-8 font-normal font-extrabold text-grey-800 sm:text-3xl text-xl dark:text-gray-400">Get 6 chances to guess a 5-letter word.</p>
+
+                <div class="flex sm:justify-center   sm:flex-row flex-col items-center">
+                    <button id="rules-button" type="button" class="w-40 text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+                        How To Play
+                    </button>
+                    <button id="login" type="button" class="w-40 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+                        Log in
+                    </button>
+                    <button id="login" type="button" class="w-40 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
+                        Play
+                    </button>
+                </div>
+                <!-- signature -->
+                <div id="signature" class="mt-10 text-sm font-normal text-black md:text-md sm:px-16 lg:px-48 dark:text-gray-400">
+                    <p class="font-extrabold">6th April 2024</p>
+                    <p> re-created by Polly Orlowska</p>
+                </div>
+            
+            </div>
+
+
+        <div id="rules"></div>
+        <div id="play"></div>
+
+
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="./assets/js/questions.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    </body>
+</html>

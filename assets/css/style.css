@@ -1,0 +1,12 @@
+.dm-serif display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h1{
+    font-family: "DM Serif Display", serif;
+}
+p{
+  font-family: serif;
+}
