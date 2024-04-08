@@ -4,9 +4,30 @@
   font-style: normal;
 }
 
+/* landing */
+
+#landing{
+  display: none;
+}
+
 h1{
     font-family: "DM Serif Display", serif;
 }
-p{
-  font-family: serif;
+p, button{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: lighter;
 }
+
+@media (max-width: 640px) {
+#buttons-div{
+  flex-direction: column-reverse !important;
+}
+}
+
+/* play */
+#navbar-hamburger{
+  position: absolute;
+  left: 1rem;
+  top: 5rem;
+}
+
