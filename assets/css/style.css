@@ -25,9 +25,53 @@ p, button{
 }
 
 /* play */
+/* #play{
+  display: none;
+} */
 #navbar-hamburger{
   position: absolute;
   left: 1rem;
   top: 5rem;
 }
 
+.key{
+  background-color: #828384;
+  color: #e3e3e1;
+  border: 1px solid #1F2937;
+  width: 40px;
+  height: 54px;
+}
+@media (max-width: 640px) {
+  key{
+    width: 36px;
+    height: 48px;
+  }
+}
+
+.square{
+  width: 48px;
+  height: 48px;
+  font-size: 28px;
+  text-align: center;
+  border: 2px solid #545454;
+  background-color: #121213;
+  color: #f8f8f8;
+  font-weight: bold;
+}
+
+.correct{
+  background-color: #538D4E;
+  border: 0px;
+}
+
+.semi-correct{
+  background-color: #B59F3C;
+  border: 0px;
+}
+
+.incorrect{
+  background-color: #3A3A3C;
+  border: 0px;
+}
+
+/* rules */

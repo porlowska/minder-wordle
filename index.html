@@ -16,7 +16,7 @@
 
 <body>
 
-    <div id="landing" class="h-screen flex justify-center items-center" style="background-color: #e3e3e1;">
+    <div id="landing" class="h-screen flex items-center" style="background-color: #e3e3e1;">
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 flex flex-col items-center">
 
             <!-- logo box -->
@@ -54,11 +54,11 @@
         </div>
     </div>
 
-    <div id="play" class="h-screen" style="background-color: #141414;">
-        <!-- Navbar -->
-        <nav class="border-b">
+    <div id="play" class="h-screen" style="background-color: #121213;">
+        <!-- Navbar either 3x felx or grid 3 cols centere-->
+        <nav class="border-b-2" style="border-color:#545454 ;">
 
-            <div class="relative max-w-screen-xl flex items-center justify-between mx-auto p-4">
+            <div class="relative max-w-screen flex items-center justify-between py-3">
 
                 <!-- Hamburger Menu -->
                 <button data-collapse-toggle="navbar-hamburger" type="button"
@@ -86,7 +86,7 @@
                                 games</a>
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 text-white bg-black rounded" aria-current="page">More
+                            <a href="#" class="block p-3 px-3 text-white bg-black rounded" aria-current="page">More
                                 games</a>
                         </li>
                     </ul>
@@ -95,7 +95,7 @@
                 <!-- logo -->
                 <h1 class="text-4xl font-extrabold text-white">Wordle</h1>
                 <!-- Icons -->
-                <div id="icons">
+                <div id="icons" class="px-3">
                     <ul class="flex flex-row font-medium mt-4 rounded-lg bg-black">
                         <li class="p-1">
                             <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -106,10 +106,7 @@
                             </svg>
                         </li>
                         <li class="p-1">
-                            <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M4 4v15a1 1 0 0 0 1 1h15M8 16l2.5-5.5 3 3L17.273 7 20 9.667" />
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="28" viewBox="4 4 24 24" width="28" class="game-icon" data-testid="icon-statistics"><path fill="var(--color-tone-1)" d="M20.6666 14.8333V5.5H11.3333V12.5H4.33325V26.5H27.6666V14.8333H20.6666ZM13.6666 7.83333H18.3333V24.1667H13.6666V7.83333ZM6.66659 14.8333H11.3333V24.1667H6.66659V14.8333ZM25.3333 24.1667H20.6666V17.1667H25.3333V24.1667Z"></path>
                             </svg>
                         </li>
                         <li class="p-1">
@@ -122,7 +119,7 @@
                         </li>
                         <li>
                             <button id="subscribe" type="button"
-                                class="w-auto bg-black border border-white font-small rounded-full text-xs px-3 py-1 p-1 me-2 mb-2 text-white">
+                                class="w-auto bg-black border border-white font-small rounded-full text-xs px-3 py-1 p-1 text-white">
                                 Subscribe to Games
                             </button>
                         </li>
@@ -132,104 +129,183 @@
         </nav>
         <!-- grid col 6, row 5 centered -->
         <div id="grid" class="p-5 container flex justify-center mt-8 mx-auto md:max-w-screen-xl">
-            <div  class="grid grid-cols-5 gap-1">
+            <div class="grid grid-cols-5 gap-1">
                 <!-- 1row -->
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700" id="1a"></div>
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700" id="2a"></div>
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700" id="3a"></div>
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700" id="4a"></div>
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700" id="5a"></div>
-                    
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+
                 <!-- 2 row -->
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                    
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+
                 <!-- 3 row -->
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                   
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+
                 <!-- 4 row -->
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                    
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+
                 <!-- 5 row -->
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                    <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
 
                 <!-- 6 row -->
-                <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
-                <div class="w-12 h-12 bg-gray-950 border-2 border-gray-700"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
 
             </div>
         </div>
-        <!-- keyboard -->
-        <div class="pt-5 container flex justify-center mt-8 mx-auto md:max-w-screen-xl">
+        <!-- modal -->
+        <!-- Modal toggle -->
+<button data-modal-target="default-modal" data-modal-toggle="default-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+    Toggle modal
+  </button>
+        <!-- keyboard  flex box not a grid , make sure the keybord does not cover the grid-->
+        <div class="fixed bottom-6 left-0 z-20 pt-5 container flex justify-center mt-8 mx-auto md:max-w-screen-xl">
             <div class="row">
-            <div class="grid grid-cols-10 gap-1">
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">Q</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">W</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">E</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">R</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">T</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">Y</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">U</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">I</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">O</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">P</button>
+                <div class="grid grid-cols-10 gap-1">
+                    <button class="key rounded-lg text-xl">Q</button>
+                    <button class="key rounded-lg text-xl">W</button>
+                    <button class="key rounded-lg text-xl">E</button>
+                    <button class="key rounded-lg text-xl">R</button>
+                    <button class="key rounded-lg text-xl">T</button>
+                    <button class="key rounded-lg text-xl">Y</button>
+                    <button class="key rounded-lg text-xl">U</button>
+                    <button class="key rounded-lg text-xl">I</button>
+                    <button class="key rounded-lg text-xl">O</button>
+                    <button class="key rounded-lg text-xl">P</button>
+
+
+                    <div></div>
+                    <button class="key rounded-lg text-xl">A</button>
+                    <button class="key rounded-lg text-xl">S</button>
+                    <button class="key rounded-lg text-xl">D</button>
+                    <button class="key rounded-lg text-xl">F</button>
+                    <button class="key rounded-lg text-xl">G</button>
+                    <button class="key rounded-lg text-xl">H</button>
+                    <button class="key rounded-lg text-xl">J</button>
+                    <button class="key rounded-lg text-xl">K</button>
+                    <button class="key rounded-lg text-xl">L</button>
+
+                    <div></div>
+                    <button class="key  rounded-lg text-xs">enter</button>
+                    <button class="key rounded-lg text-xl">Z</button>
+                    <button class="key rounded-lg text-xl">X</button>
+                    <button class="key rounded-lg text-xl">C</button>
+                    <button class="key rounded-lg text-xl">V</button>
+                    <button class="key rounded-lg text-xl">B</button>
+                    <button class="key rounded-lg text-xl">N</button>
+                    <button class="key rounded-lg text-xl">M</button>
+                    <button class="key rounded-lg text-sm"> del</button>
+
+
+
+                </div>
+
             </div>
 
-            <div class="grid grid-cols-10 gap-1">
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">A</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">S</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">D</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">F</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">G</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">H</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">J</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">K</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">L</button>
+
+            <div id="rules">
+
+                <!-- Main modal -->
+                <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                    <div class="relative p-4 w-full max-w-2xl max-h-full">
+                        <!-- Modal content -->
+                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                            <!-- Modal header -->
+                            <div class="flex items-center justify-between p-4 md:p-5 rounded-t ">
+                                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
+                                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                    </svg>
+                                    <span class="sr-only">Close modal</span>
+                                </button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="p-4 md:p-5 space-y-4">
+                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                    How to play
+                                </h3>
+                                <h5 class="text-md text-gray-900 dark:text-white">
+                                    Guess the Wordle in 6 tries.
+                                </h5>
+                                <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                                    <li>Each guess must be a valid 5-letter word.
+                                    </li>
+                                    <li>The color of the tiles will change to show how close your guess was to the word.</li>
+                                </ul>
+                                <h5 class="text-md text-gray-900 font-semibold dark:text-white">
+                                    Examples
+                                </h5>
+                                <div id="grid" class="container flex flext-start mt-8 mx-auto md:max-w-screen-xl">
+                                    <div class="grid grid-cols-5 gap-1">
+                                        <div class="square correct">W</div>
+                                        <div class="square">E</div>
+                                        <div class="square">A</div>
+                                        <div class="square">R</div>
+                                        <div class="square">Y</div>
+                                    </div>
+                                    </div>
+                                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                W is in the word and in the correct spot.
+                                </p>
+                                <div id="grid" class="container flex flext-start mt-8 mx-auto md:max-w-screen-xl">
+                                    <div class="grid grid-cols-5 gap-1">
+                                        <div class="square">P</div>
+                                        <div class="square semi-correct">I</div>
+                                        <div class="square">L</div>
+                                        <div class="square">L</div>
+                                        <div class="square">S</div>
+                                    </div>
+                                    </div>
+                                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                I is in the word but in the wrong spot.
+                                </p>
+                                <div id="grid" class="container flex flext-start mt-8 mx-auto md:max-w-screen-xl">
+                                    <div class="grid grid-cols-5 gap-1">
+                                        <div class="square">V</div>
+                                        <div class="square">A</div>
+                                        <div class="square">G</div>
+                                        <div class="square incorrect">U</div>
+                                        <div class="square">E</div>
+                                    </div>
+                                    </div>
+                                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                U is not in the word in any spot.
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
 
-            <div class="grid grid-cols-10 gap-1">
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xs">enter</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">Z</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">X</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">C</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">V</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">B</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">N</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-xl">M</button>
-                <button class="w-10 h-14 bg-gray-500 border-2 border-gray-900 rounded-lg text-white text-md"> del</button>
-            </div>
-            
 
-        </div>
-
-    </div>
-    <div id="rules"></div>
-
-
-
-    <script src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="./assets/js/questions.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.7.1.js"
+                integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+            <script src="./assets/js/questions.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 </body>
 
 </html>
