@@ -25,203 +25,185 @@
             </div>
 
             <h1
-                class="my-2 text-5xl font-extrabold tracking-tight leading-none text-gray-900 lg:text-6xl dark:text-white">
+                class="my-2 text-5xl font-extrabold tracking-tight leading-none text-gray-900 lg:text-6xl">
                 Wordle</h1>
             <p
-                class="mb-8 md:text-4xl md:w-40 font-normal font-extrabold text-gray-800 sm:text-3xl text-2xl dark:text-gray-400">
+                class="mb-8 md:text-4xl md:w-40 font-normal font-extrabold text-gray-800 sm:text-3xl text-2xl">
                 Get 6 chances to guess a 5-letter word.</p>
 
             <div id="buttons-div" class="flex sm:justify-center sm:flex-row  items-center">
                 <button id="rules-button" type="button"
-                    class="w-40 text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+                    class="w-40 text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 ">
                     How To Play
                 </button>
                 <button id="login" type="button"
-                    class="w-40 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+                    class="w-40 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 ">
                     Log in
                 </button>
-                <button id="login" type="button"
-                    class="w-40 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
+                <button id="play" type="button"
+                    class="w-40 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2">
                     Play
                 </button>
             </div>
             <!-- signature -->
             <div id="signature"
-                class="mt-10 text-sm font-normal text-black md:text-md sm:px-16 lg:px-48 dark:text-gray-400">
+                class="mt-10 text-sm font-normal text-black md:text-md sm:px-16 lg:px-48 ">
                 <p class="font-extrabold">6th April 2024</p>
                 <p> re-created by Polly Orlowska</p>
             </div>
         </div>
     </div>
 
-    <div id="play" class="h-screen" style="background-color: #121213;">
-        <!-- Navbar either 3x felx or grid 3 cols centere-->
-        <nav class="border-b-2" style="border-color:#545454 ;">
+    <div id="play" class="h-screen w-full" style="background-color: #121213;">
 
-            <div class="relative max-w-screen flex items-center justify-between py-3">
-
-                <!-- Hamburger Menu -->
+        
+            <nav class="navbar border-b-2 w-full grid grid-cols-3" style="border-color:#545454;">
+        
+                <div class="flex items-center justify-between py-3 mx-auto p-4">
+        
+                    <!-- Hamburger Menu -->
                 <button data-collapse-toggle="navbar-hamburger" type="button"
-                    class="inline-flex items-center justify-center mx-2 p-2 w-10 h-10 text-sm text-white rounded-lg"
-                    aria-controls="navbar-hamburger" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
-                </button>
-                <div class="hidden w-full" id="navbar-hamburger">
-                    <ul class="flex flex-col font-medium rounded-lg bg-black">
-                        <li>
-                            <a href="#" class=" py-2 px-3 text-white bg-black rounded" aria-current="page">More
-                                games</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block py-2 px-3 text-white bg-black rounded" aria-current="page">More
-                                games</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block py-2 px-3 text-white bg-black rounded" aria-current="page">More
-                                games</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block p-3 px-3 text-white bg-black rounded" aria-current="page">More
-                                games</a>
-                        </li>
-                    </ul>
+                class="p-2 w-10 h-10 text-sm text-white rounded-lg flex justify-center items-center"
+                aria-controls="navbar-hamburger" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M1 1h15M1 7h15M1 13h15" />
+                </svg>
+            </button>
+        
+        
+                    <!-- logo -->
+                    <h1 class=" md:text-4xl text-2xl font-extrabold text-white text-center">Wordle</h1>
+        
+                    <!-- Icons -->
+                    <div id="icons" class="flex items-center space-x-2">
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="22" viewBox="4 4 24 24" width="22"
+                            class="game-icon text-white">
+                            <path fill="white"
+                                d="M14.8333 23H17.1666V20.6667H14.8333V23ZM15.9999 4.33334C9.55992 4.33334 4.33325 9.56001 4.33325 16C4.33325 22.44 9.55992 27.6667 15.9999 27.6667C22.4399 27.6667 27.6666 22.44 27.6666 16C27.6666 9.56001 22.4399 4.33334 15.9999 4.33334ZM15.9999 25.3333C10.8549 25.3333 6.66659 21.145 6.66659 16C6.66659 10.855 10.8549 6.66668 15.9999 6.66668C21.1449 6.66668 25.3333 10.855 25.3333 16C25.3333 21.145 21.1449 25.3333 15.9999 25.3333ZM15.9999 9.00001C13.4216 9.00001 11.3333 11.0883 11.3333 13.6667H13.6666C13.6666 12.3833 14.7166 11.3333 15.9999 11.3333C17.2833 11.3333 18.3333 12.3833 18.3333 13.6667C18.3333 16 14.8333 15.7083 14.8333 19.5H17.1666C17.1666 16.875 20.6666 16.5833 20.6666 13.6667C20.6666 11.0883 18.5783 9.00001 15.9999 9.00001Z" />
+                        </svg>
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="22" viewBox="4 4 24 24" width="22"
+                            class="game-icon text-white">
+                            <path fill="white"
+                                d="M20.6666 14.8333V5.5H11.3333V12.5H4.33325V26.5H27.6666V14.8333H20.6666ZM13.6666 7.83333H18.3333V24.1667H13.6666V7.83333ZM6.66659 14.8333H11.3333V24.1667H6.66659V14.8333ZM25.3333 24.1667H20.6666V17.1667H25.3333V24.1667Z" />
+                        </svg>
+                        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="22" viewBox="4 4 24 24" width="22"
+                            class="game-icon text-white">
+                            <path fill="white"
+                                d="M25.52 17.2534C25.5733 16.8534 25.6 16.44 25.6 16C25.6 15.5734 25.5733 15.1467 25.5067 14.7467L28.2133 12.64C28.4533 12.4534 28.52 12.0934 28.3733 11.8267L25.8133 7.40004C25.6533 7.10671 25.32 7.01338 25.0267 7.10671L21.84 8.38671C21.1733 7.88004 20.4667 7.45338 19.68 7.13338L19.2 3.74671C19.1467 3.42671 18.88 3.20004 18.56 3.20004H13.44C13.12 3.20004 12.8666 3.42671 12.8133 3.74671L12.3333 7.13338C11.5467 7.45338 10.8267 7.89338 10.1733 8.38671L6.98665 7.10671C6.69332 7.00004 6.35998 7.10671 6.19998 7.40004L3.65332 11.8267C3.49332 12.1067 3.54665 12.4534 3.81332 12.64L6.51998 14.7467C6.45332 15.1467 6.39998 15.5867 6.39998 16C6.39998 16.4134 6.42665 16.8534 6.49332 17.2534L3.78665 19.36C3.54665 19.5467 3.47998 19.9067 3.62665 20.1734L6.18665 24.6C6.34665 24.8934 6.67998 24.9867 6.97332 24.8934L10.16 23.6134C10.8267 24.12 11.5333 24.5467 12.32 24.8667L12.8 28.2534C12.8667 28.5734 13.12 28.8 13.44 28.8H18.56C18.88 28.8 19.1467 28.5734 19.1867 28.2534L19.6667 24.8667C20.4533 24.5467 21.1733 24.12 21.8267 23.6134L25.0133 24.8934C25.3067 25 25.64 24.8934 25.8 24.6L28.36 20.1734C28.52 19.88 28.4533 19.5467 28.2 19.36L25.52 17.2534ZM16 20.8C13.36 20.8 11.2 18.64 11.2 16C11.2 13.36 13.36 11.2 16 11.2C18.64 11.2 20.8 13.36 20.8 16C20.8 18.64 18.64 20.8 16 20.8Z" />
+                        </svg>
+                        <button id="subscribe"
+                            class="w-auto bg-black border border-white font-small rounded-full text-xs px-3 py-1 text-white whitespace-nowrap py-1.5">
+                            Subscribe to Games
+                        </button>
+                    </div>
+        
                 </div>
+            </nav>
+                    <!-- modal -->
+                    <!-- Modal toggle -->
+                    <button data-modal-target="default-modal" data-modal-toggle="default-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2 text-center" type="button">
+                        T
+                    </button>
+        
 
-                <!-- logo -->
-                <h1 class="text-4xl font-extrabold text-white">Wordle</h1>
-                <!-- Icons -->
-                <div id="icons" class="px-3">
-                    <ul class="flex flex-row font-medium mt-4 rounded-lg bg-black">
-                        <li class="p-1">
-                            <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M9.529 9.988a2.502 2.502 0 1 1 5 .191A2.441 2.441 0 0 1 12 12.582V14m-.01 3.008H12M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                            </svg>
-                        </li>
-                        <li class="p-1">
-                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="28" viewBox="4 4 24 24" width="28" class="game-icon" data-testid="icon-statistics"><path fill="var(--color-tone-1)" d="M20.6666 14.8333V5.5H11.3333V12.5H4.33325V26.5H27.6666V14.8333H20.6666ZM13.6666 7.83333H18.3333V24.1667H13.6666V7.83333ZM6.66659 14.8333H11.3333V24.1667H6.66659V14.8333ZM25.3333 24.1667H20.6666V17.1667H25.3333V24.1667Z"></path>
-                            </svg>
-                        </li>
-                        <li class="p-1">
-                            <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                width="24" height="24" fill="none" viewBox="0 0 24 24">
-                                <path stroke="currentColor" stroke-linecap="square" stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M10 19H5a1 1 0 0 1-1-1v-1a3 3 0 0 1 3-3h2m10 1a3 3 0 0 1-3 3m3-3a3 3 0 0 0-3-3m3 3h1m-4 3a3 3 0 0 1-3-3m3 3v1m-3-4a3 3 0 0 1 3-3m-3 3h-1m4-3v-1m-2.121 1.879-.707-.707m5.656 5.656-.707-.707m-4.242 0-.707.707m5.656-5.656-.707.707M12 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                            </svg>
-                        </li>
-                        <li>
-                            <button id="subscribe" type="button"
-                                class="w-auto bg-black border border-white font-small rounded-full text-xs px-3 py-1 p-1 text-white">
-                                Subscribe to Games
-                            </button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- grid col 6, row 5 centered -->
-        <div id="grid" class="p-5 container flex justify-center mt-8 mx-auto md:max-w-screen-xl">
-            <div class="grid grid-cols-5 gap-1">
-                <!-- 1row -->
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
+            <!-- grid col 6, row 5 centered -->
+            <div id="game-grid" class=" flex-1 flex flex-col items-center justify-center  p-3">
+                    <div class="grid grid-cols-5 gap-1">
+                        <!-- 1row -->
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+        
+                        <!-- 2 row -->
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+        
+                        <!-- 3 row -->
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+        
+                        <!-- 4 row -->
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+        
+                        <!-- 5 row -->
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+        
+                        <!-- 6 row -->
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+                        <div class="square"></div>
+        
+                    </div>
+               
+                
+        
 
-                <!-- 2 row -->
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-
-                <!-- 3 row -->
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-
-                <!-- 4 row -->
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-
-                <!-- 5 row -->
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-
-                <!-- 6 row -->
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-                <div class="square"></div>
-
-            </div>
-        </div>
-        <!-- modal -->
-        <!-- Modal toggle -->
-<button data-modal-target="default-modal" data-modal-toggle="default-modal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
-    Toggle modal
-  </button>
         <!-- keyboard  flex box not a grid , make sure the keybord does not cover the grid-->
-        <div class="fixed bottom-6 left-0 z-20 pt-5 container flex justify-center mt-8 mx-auto md:max-w-screen-xl">
-            <div class="row">
-                <div class="grid grid-cols-10 gap-1">
-                    <button class="key rounded-lg text-xl">Q</button>
-                    <button class="key rounded-lg text-xl">W</button>
-                    <button class="key rounded-lg text-xl">E</button>
-                    <button class="key rounded-lg text-xl">R</button>
-                    <button class="key rounded-lg text-xl">T</button>
-                    <button class="key rounded-lg text-xl">Y</button>
-                    <button class="key rounded-lg text-xl">U</button>
-                    <button class="key rounded-lg text-xl">I</button>
-                    <button class="key rounded-lg text-xl">O</button>
-                    <button class="key rounded-lg text-xl">P</button>
+        <div class="p-3 w-full fixed bottom-0 left-0">
+            <div class="flex justify-center gap-1">
+                    <!-- First row -->
+                    <button class="key rounded-lg">Q</button>
+                    <button class="key rounded-lg">W</button>
+                    <button class="key rounded-lg">E</button>
+                    <button class="key rounded-lg">R</button>
+                    <button class="key rounded-lg">T</button>
+                    <button class="key rounded-lg">Y</button>
+                    <button class="key rounded-lg">U</button>
+                    <button class="key rounded-lg">I</button>
+                    <button class="key rounded-lg">O</button>
+                    <button class="key rounded-lg">P</button>
+                </div>
 
-
-                    <div></div>
-                    <button class="key rounded-lg text-xl">A</button>
-                    <button class="key rounded-lg text-xl">S</button>
-                    <button class="key rounded-lg text-xl">D</button>
-                    <button class="key rounded-lg text-xl">F</button>
-                    <button class="key rounded-lg text-xl">G</button>
-                    <button class="key rounded-lg text-xl">H</button>
-                    <button class="key rounded-lg text-xl">J</button>
-                    <button class="key rounded-lg text-xl">K</button>
-                    <button class="key rounded-lg text-xl">L</button>
-
-                    <div></div>
-                    <button class="key  rounded-lg text-xs">enter</button>
-                    <button class="key rounded-lg text-xl">Z</button>
-                    <button class="key rounded-lg text-xl">X</button>
-                    <button class="key rounded-lg text-xl">C</button>
-                    <button class="key rounded-lg text-xl">V</button>
-                    <button class="key rounded-lg text-xl">B</button>
-                    <button class="key rounded-lg text-xl">N</button>
-                    <button class="key rounded-lg text-xl">M</button>
-                    <button class="key rounded-lg text-sm"> del</button>
-
-
+                <div class="flex justify-center gap-1 mt-1">
+                    <!-- secon row -->
+                    <button class="key rounded-lg">A</button>
+                    <button class="key rounded-lg">S</button>
+                    <button class="key rounded-lg">D</button>
+                    <button class="key rounded-lg">F</button>
+                    <button class="key rounded-lg">G</button>
+                    <button class="key rounded-lg">H</button>
+                    <button class="key rounded-lg">J</button>
+                    <button class="key rounded-lg">K</button>
+                    <button class="key rounded-lg">L</button>
+                </div>
+                <div class="flex justify-center gap-1 mt-1">
+                    <!-- third row -->
+                    <button class="special key rounded-lg text-xs">enter</button>
+                    <button class="key rounded-lg">Z</button>
+                    <button class="key rounded-lg">X</button>
+                    <button class="key rounded-lg">C</button>
+                    <button class="key rounded-lg">V</button>
+                    <button class="key rounded-lg">B</button>
+                    <button class="key rounded-lg">N</button>
+                    <button class="key rounded-lg">M</button>
+                    <button class="special key rounded-lg text-sm"> del</button>
+                </div>
 
                 </div>
 
             </div>
+        
 
 
             <div id="rules">
@@ -230,10 +212,10 @@
                 <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
                     <div class="relative p-4 w-full max-w-2xl max-h-full">
                         <!-- Modal content -->
-                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                        <div class="relative bg-white rounded-lg shadow ">
                             <!-- Modal header -->
                             <div class="flex items-center justify-between p-4 md:p-5 rounded-t ">
-                                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
+                                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center" data-modal-hide="default-modal">
                                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
                                     </svg>
@@ -242,21 +224,21 @@
                             </div>
                             <!-- Modal body -->
                             <div class="p-4 md:p-5 space-y-4">
-                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                <h3 class="text-xl font-semibold text-gray-900">
                                     How to play
                                 </h3>
-                                <h5 class="text-md text-gray-900 dark:text-white">
+                                <h5 class="text-md text-gray-900 ">
                                     Guess the Wordle in 6 tries.
                                 </h5>
-                                <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                                <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside ">
                                     <li>Each guess must be a valid 5-letter word.
                                     </li>
                                     <li>The color of the tiles will change to show how close your guess was to the word.</li>
                                 </ul>
-                                <h5 class="text-md text-gray-900 font-semibold dark:text-white">
+                                <h5 class="text-md text-gray-900 font-semibold ">
                                     Examples
                                 </h5>
-                                <div id="grid" class="container flex flext-start mt-8 mx-auto md:max-w-screen-xl">
+                                <div class="container flex flext-start mt-8 mx-auto md:max-w-screen-xl">
                                     <div class="grid grid-cols-5 gap-1">
                                         <div class="square correct">W</div>
                                         <div class="square">E</div>
@@ -265,10 +247,10 @@
                                         <div class="square">Y</div>
                                     </div>
                                     </div>
-                                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                <p class="text-base leading-relaxed text-gray-500 ">
                                 W is in the word and in the correct spot.
                                 </p>
-                                <div id="grid" class="container flex flext-start mt-8 mx-auto md:max-w-screen-xl">
+                                <div class="container flex flext-start mt-8 mx-auto md:max-w-screen-xl">
                                     <div class="grid grid-cols-5 gap-1">
                                         <div class="square">P</div>
                                         <div class="square semi-correct">I</div>
@@ -277,10 +259,10 @@
                                         <div class="square">S</div>
                                     </div>
                                     </div>
-                                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                <p class="text-base leading-relaxed text-gray-500 ">
                                 I is in the word but in the wrong spot.
                                 </p>
-                                <div id="grid" class="container flex flext-start mt-8 mx-auto md:max-w-screen-xl">
+                                <div class="container flex flext-start mt-8 mx-auto md:max-w-screen-xl">
                                     <div class="grid grid-cols-5 gap-1">
                                         <div class="square">V</div>
                                         <div class="square">A</div>
@@ -289,7 +271,7 @@
                                         <div class="square">E</div>
                                     </div>
                                     </div>
-                                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                <p class="text-base leading-relaxed text-gray-500 ">
                                 U is not in the word in any spot.
                                 </p>
                             </div>

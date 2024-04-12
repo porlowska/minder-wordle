@@ -28,29 +28,25 @@ p, button{
 /* #play{
   display: none;
 } */
-#navbar-hamburger{
-  position: absolute;
-  left: 1rem;
-  top: 5rem;
-}
+
 
 .key{
   background-color: #828384;
   color: #e3e3e1;
   border: 1px solid #1F2937;
-  width: 40px;
-  height: 54px;
+  width: 52px;
+  height: 68px;
+  font-size: x-large;
 }
-@media (max-width: 640px) {
-  key{
-    width: 36px;
-    height: 48px;
-  }
+
+
+.special{
+  width: 72px !important;
 }
 
 .square{
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
   font-size: 28px;
   text-align: center;
   border: 2px solid #545454;
@@ -58,7 +54,27 @@ p, button{
   color: #f8f8f8;
   font-weight: bold;
 }
-
+@media (max-width: 380px) {
+  .key{
+    width: 32px;
+    height: 48px;
+  }
+}
+@media (max-width: 640px) {
+  .key{
+    width: 36px;
+    height: 52px;
+  }
+  .square{
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+  }
+  .special{
+    font-size: small;
+    width: 52px;
+  }
+}
 .correct{
   background-color: #538D4E;
   border: 0px;
